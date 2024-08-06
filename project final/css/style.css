@@ -84,12 +84,19 @@ header .navBar {
 }
 
 @media (max-width: 480px) {
+    .logo-container{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
     header .navBar {
-        height: 10vh;
+        position: relative;
+        height: 500px;
         padding: 0 10px;
         flex-direction: column;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         justify-content: space-evenly;
+        gap: 5px;
     }
     .li-container {
         flex-direction: column;
@@ -98,6 +105,13 @@ header .navBar {
     }
     .li-container li a {
         font-size: 0.9em;
+    }
+    .logo-container a img{
+        padding: 10px;
+        margin: 0 auto;
+        height: 90px !important;
+        overflow: hidden;
+        width: 50%;
     }
 }
 
@@ -1728,6 +1742,11 @@ th {
 
 
 @media (max-width: 768px) {
+    .tab-nav {
+        font-weight: bold;
+        font-size: 12px;
+        
+    }
     .product-section {
         flex-direction: column;
     }
