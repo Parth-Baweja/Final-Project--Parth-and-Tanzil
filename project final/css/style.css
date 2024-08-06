@@ -991,7 +991,7 @@ input[type="submit"]:hover {
 
 /* General styles */
 .body_tag {
-    margin-top: 18vh;
+    margin-top: 18vh !important;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
