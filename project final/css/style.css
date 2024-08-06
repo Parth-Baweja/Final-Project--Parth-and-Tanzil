@@ -19,52 +19,39 @@ body {
     margin-top: 18vh;
 }
 
-header {    
-
+/* Header Styling */
+header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0rem;
+    margin: 0;
     width: 100%;
     height: 18vh !important;
 }
 
 header .navBar {
-    /* z-index: 10000000;
-    background-color: #eec7d7;   */
-    /* background-color: #d5bfcc;
-    z-index: 10000000;
-    background-color: beige;
-    position: fixed;     */
-    /* position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    
-    background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
-    z-index: 1000; */
-    /* padding: 20px 150px; */
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     width: 100%;
     height: 18vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: 0  ;
+    top: 0;
     z-index: 2;
     background-color: #F9F4F0;
-    /* background-color: transparent; */
 }
+
 .navbar.scrolled {
-    color: rgb(255, 200, 122); /* Dark transparent background */
+    color: rgb(255, 200, 122);
 }
+
 .li-container {
     gap: 70px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
+
 .li-container li {
     list-style: none;
 }
@@ -72,7 +59,6 @@ header .navBar {
 .li-container li a {
     cursor: pointer;
     font-weight: bold;
-    /* color: rgb(180, 174, 161); */
     color: #C5693E;
     font-size: 1.2em;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -83,21 +69,49 @@ header .navBar {
     transform: scale(1.1);
 }
 
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header .navBar {
+        height: 15vh;
+        padding: 0 15px;
+    }
+    .li-container {
+        gap: 30px;
+    }
+    .li-container li a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .navBar {
+        height: 10vh;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .li-container {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .li-container li a {
+        font-size: 0.9em;
+    }
+}
+
 .logo-container a img {
     display: flex;
     align-items: center;
     height: 100%;
     max-width: 100%;
-    /* background-color: #DDC469; */
-    /* margin: 10px 0 0 18px; */
-    /* padding-left: 10px; */
     border-radius: 20px;
-    
 }
 
+/* Main Content Styling */
 .bg-container {
     position: relative;
-    bottom: 18vh;
     background-image: url("/img/minolta-vintage-camera-on-white-background.jpg");
     background-size: cover;
     background-position: center;
@@ -106,11 +120,12 @@ header .navBar {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    padding-top: 18vh; /* To ensure content is not hidden behind the navbar */
 }
 
 .mast-head {
     position: relative;
-    top: 20vh;
+    top: 0;
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -206,7 +221,8 @@ input[type="submit"]:hover {
     } */
      header{
         position: absolute;
-        top: 0;   
+        top: 0;  
+        padding: 10px 0; 
      }
     .navBar{
         width: 100% !important;
@@ -217,11 +233,13 @@ input[type="submit"]:hover {
     .mast-head h2 {
         font-size: 2em;
         padding: 0 10px;
+        margin: 10px 0;
     }
 
     .tagline-1 {
         font-size: 1.2em;
         padding: 0 10px;
+        margin: 10px 0;
     }
 }
 
@@ -250,7 +268,7 @@ input[type="submit"]:hover {
 
 .categories-container {
     /* margin: 10px 20px; */
-    padding: 0 50px;
+    padding: 20px 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -446,7 +464,7 @@ input[type="submit"]:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 70px 20px;
+    margin: 70px 20px;  
 }
 
 .customer-reviews h2 {
@@ -460,6 +478,7 @@ input[type="submit"]:hover {
     font-size: 1.5em;
     color: #D9764A;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .reviews-container {
@@ -492,11 +511,14 @@ input[type="submit"]:hover {
 }
 
 .review-text {
+    font-style: italic;
+    text-align: center;
     font-size: 1.2em;
     color: #333;
 }
 
 .reviewer-name {
+    text-align: center;
     font-weight: bold;
     color: #D9764A;
 }
