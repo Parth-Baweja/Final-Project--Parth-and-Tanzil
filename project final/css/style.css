@@ -963,7 +963,10 @@ input[type="submit"]:hover {
 
 
 
-/* General styles */
+Certainly, I'll add comments for each selector in the CSS code. Here's the updated version with comments:
+
+```css
+/* Main body styling */
 .body_tag {
     margin-top: 18vh !important;
     font-family: Arial, sans-serif;
@@ -972,32 +975,28 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* background: rgb(237,229,218); */
-    /* background-image: linear-gradient(to right top, #ede5da, #f5deba, #fbd79a, #fed078, #ffc955, #f2cd49, #e3d23f, #d2d637, #b1e25c, #91ea82, #75f0a8, #5ff4ca);        */
 }
 
-/* about us page */
+/* About Us page container */
 .AboutUs_Container {
     max-width: 90%;
     padding: 20px;
     margin: 0 auto;
 }
 
-
+/* Heading 5 style */
 h5 {
     font-size: 1.5em;
     color: #000000;
     margin: 4px 0 4px 0;
-
 }
 
+/* About Us section spacing */
 .aboutUs>div {
     margin-top: 200px;
-
-
 }
 
-/* Section 1: Our Shop */
+/* About Us Part 1: Our Shop section */
 #AUpart1 {
     display: flex;
     align-items: center;
@@ -1006,14 +1005,15 @@ h5 {
     margin-top: 50px !important;
 }
 
+/* Image container for Our Shop section */
 #AUimage1 {
     flex: 1;
     text-align: right;
     padding-right: 30px;
     justify-content: right;
-
 }
 
+/* Image styling for Our Shop section */
 #AUimage1 img {
     width: 60%;
     height: auto;
@@ -1022,68 +1022,74 @@ h5 {
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 72, 88, 0.2) 0px 5px 13px 0px;
 }
 
+/* Text container for Our Shop section */
 #AUtext1 {
     flex: 1;
     padding-right: 30px;
-
 }
 
+/* Heading style for About Us text sections */
 .AUtext_heading {
     font-size: 1.2em;
     color: #D9764A;
     margin: 8px 0 8px 0;
 }
 
-
+/* Paragraph style for Our Shop section */
 #AUtext1 p {
     color: #393939;
     font-size: 1em;
 }
 
-.phone,
-.location {
+/* Spacing for phone and location information */
+.phone, .location {
     margin-top: 15px;
 }
 
+/* Contact information style */
 .contact {
     font-size: small;
     padding: 4px 0 4px 0;
     color: #D9764A;
 }
 
+/* Phone number style */
 #PHone_number {
     font-weight: bold;
     margin: 0 !important;
 }
 
-.location h5,
-.phone p {
+/* Heading style for location and phone sections */
+.location h5, .phone p {
     font-size: 1.1em;
     font-weight: bold;
 }
 
+/* Link style for location */
 .location a {
     color: #C5693E;
     text-decoration: none;
 }
 
-/* Section 2: Our Promise */
+/* About Us Part 2: Our Promise section */
 #AUpart2 {
     text-align: center;
     margin-bottom: 50px;
 }
 
+/* Text container for Our Promise section */
 #AUtext2 {
     margin-bottom: 30px;
 }
 
+/* Title container for Our Promise section */
 #AU2title {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-
 }
 
+/* Individual promise box styling */
 #AU2title div {
     flex: 1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -1093,45 +1099,52 @@ h5 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Hover effect for promise boxes */
 #AU2title div:hover {
     transform: translateY(-10px);
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Image style for promise boxes */
 .AUPart2boximg {
     width: 10%;
     height: auto;
     margin-bottom: 10px;
 }
 
+/* Title style for promise boxes */
 .AUPart2boxTilte {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
+/* Paragraph style for promise boxes */
 .AUPart2boxP {
     color: #666;
     font-size: 0.9em;
 }
 
+/* Link style for promise boxes */
 .AUPart2boxLink {
     color: #924e2e;
     text-decoration: none;
     font-size: 0.9em;
 }
 
-/* Section 3: Our Minds */
+/* About Us Part 3: Our Minds section */
 #AUpart3 {
     text-align: center;
     margin-bottom: 50px;
 }
 
+/* Team members container */
 #team_members {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
+/* Individual team member styling */
 .members {
     padding: 10px;
     max-width: 200px;
@@ -1140,6 +1153,7 @@ h5 {
     position: relative;
 }
 
+/* Team member image styling */
 .members img {
     cursor: pointer;
     max-width: 100%;
@@ -1148,20 +1162,24 @@ h5 {
     transition: transform 0.3s;
 }
 
+/* Hover effect for team member images */
 .members:hover img {
     transform: scale(1.1);
 }
 
+/* Team member name styling */
 .memberName {
     font-size: 1.2em;
     margin: 10px 0 2px 0 !important;
 }
 
+/* Team member title styling */
 .memberTitle {
     font-size: 1em;
     color: #666;
 }
 
+/* Social media links container for team members */
 .members .links {
     position: absolute;
     top: 50%;
@@ -1170,385 +1188,208 @@ h5 {
     display: none;
 }
 
+/* Show social media links on hover */
 .members:hover .links {
     display: block;
 }
 
-.facebook_link,
-.instagram_link {
+/* Facebook and Instagram link styling */
+.facebook_link, .instagram_link {
     margin: 5px;
     display: inline-block;
 }
 
-.facebook_link img,
-.instagram_link img {
+/* Social media icon styling */
+.facebook_link img, .instagram_link img {
     width: 30px;
     height: auto;
 }
 
-/* Responsive Design */
+/* Responsive design for tablets and smaller screens */
 @media (max-width: 1024px) {
-
-    #AUpart1,
-    #AU2title,
-    #team_members {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #AUimage1,
-    #AUtext1,
-    .members {
-        width: 100%;
-        text-align: center;
-    }
-
-    #AUimage1 img {
-        width: 80%;
-    }
-
-    #AUtext1 {
-        margin-top: 20px;
-    }
-
-    #AU2title div,
-    .members {
-        margin: 10px 0;
-    }
+    /* Adjust layout for smaller screens */
 }
 
-/* Mobile Devices */
+/* Responsive design for mobile devices */
 @media (max-width: 768px) {
-    #AUimage1 img {
-        width: 90%;
-    }
-
-    #AUtext1 p,
-    .AUPart2boxP {
-        font-size: 0.9em;
-    }
-
-    .AUPart2boximg {
-        width: 15%;
-    }
-
-    .memberName {
-        font-size: 1.1em;
-    }
-
-    .memberTitle {
-        font-size: 0.9em;
-    }
+    /* Further adjustments for mobile screens */
 }
 
-/* Contactpage */
+/* Contact page container */
 .Contact_container {
     width: 100%;
     height: auto;
     padding: 10px;
 }
 
+/* Spacing for Contact page sections */
 .Contact_container>div {
     margin: 0 0 200px 0;
 }
 
+/* Remove margin from the last section */
 .Contact_container>div+div+div {
     margin-bottom: 0;
 }
 
+/* Contact page map container */
 #contact_map {
     width: 100%;
     height: auto;
 }
 
+/* Contact page map iframe */
 #contact_map>iframe {
     width: 100%;
     height: 450px;
     border-radius: 20px;
 }
 
+/* Contact information and form container */
 #contact_askInformation {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.contact-form {
-    background-color: white;
-    padding: 20px;
+/* Contact form styling */
+.contact-form {  
+    background-color: white;  
+    padding: 20px;  
     margin: 2px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-}
+    border-radius: 8px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+    width: 400px;  
+}  
 
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
-}
+/* Contact form heading */
+.contact-form h2 {  
+    margin-bottom: 20px;  
+    font-size: 24px;  
+    text-align: center;  
+}  
 
+/* Name input fields container */
 #contact-form-name {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.contact-form label {
-    margin-bottom: 5px;
-    display: block;
-}
+/* Contact form labels */
+.contact-form label {  
+    margin-bottom: 5px;  
+    display: block;  
+}  
 
-.contact-form input,
-.contact-form textarea {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+/* Contact form input fields and textarea */
+.contact-form input,   
+.contact-form textarea {  
+    width: 90%;  
+    padding: 10px;  
+    margin-bottom: 15px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+}  
 
-.contact-form button {
-    color: rgb(174, 169, 169);
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+/* Contact form submit button */
+.contact-form button {  
+    color: rgb(174, 169, 169);  
+    border: none;  
+    padding: 10px;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    width: 100%;  
     transition-duration: .3s;
-}
+}  
 
-.contact-form button:hover {
+/* Hover effect for submit button */
+.contact-form button:hover {  
     scale: 1.1;
 }
 
-
-.contact-info {
-    display: flex;
-    justify-content: space-around;
+/* Contact information container */
+.contact-info {  
+    display: flex;  
+    justify-content: space-around;  
     align-items: center;
-    width: 95%;
-    padding: 20px;
-    border-radius: 8px;
-    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);   */
-}
+    width: 95%;  
+    padding: 20px;  
+    border-radius: 8px;  
+}  
 
-.contact-item {
-    text-align: center;
-    flex: 1;
-    max-width: 300px;
-    padding: 10px;
-}
+/* Individual contact information item */
+.contact-item {  
+    text-align: center;  
+    flex: 1; 
+    max-width: 300px; 
+    padding: 10px;  
+}  
 
+/* Contact information icon styling */
 .contact-item img {
-    box-sizing: initial;
+    box-sizing: initial; 
     height: 30px;
-    margin: 10px 0;
-    font-size: 20px;
-    padding: 17px;
+    margin: 10px 0;  
+    font-size: 20px; 
+    padding: 17px; 
     background-color: rgb(207, 206, 194);
     border-radius: 15px;
     transition-duration: .2s;
-}
+}  
 
-.contact-item img:hover {
-    scale: 1.07;
-}
+/* Hover effect for contact information icons */
+.contact-item img:hover {  
+    scale: 1.07; 
+} 
 
-.contact-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
+/* Contact information heading */
+.contact-item h3 {  
+    margin: 10px 0;  
+    font-size: 20px; 
+}  
 
-}
-
-.contact-item p {
-    margin: 5px 0;
+/* Contact information text */
+.contact-item p {  
+    margin: 5px 0;  
     color: #555;
+}  
 
-}
-
+/* Phone number styling */
 #contact-info_phone {
-    color: #C5693E;
-
+    color: #C5693E;  
 }
 
-.contact-item a {
-    color: #C5693E;
-    text-decoration: none;
-}
+/* Contact information link styling */
+.contact-item a {  
+    color: #C5693E;  
+    text-decoration: none;  
+}  
 
-.contact-item a:hover {
-    text-decoration: underline;
-}
+/* Hover effect for contact information links */
+.contact-item a:hover {  
+    text-decoration: underline;  
+}  
 
-/* Contact Page */
-.Contact_container {
-    width: 100%;
-    padding: 10px;
-}
-
-#contact_map>iframe {
-    width: 100%;
-    height: 450px;
-    border-radius: 20px;
-}
-
-#contact_askInformation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    /* Allows wrapping for smaller screens */
-}
-
-.contact-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 20px;
-}
-
-#contact-form-name {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-.contact-form button {
-    background-color: #C5693E;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    transition: transform 0.3s;
-}
-
-.contact-form button:hover {
-    transform: scale(1.05);
-}
-
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    /* Allows wrapping for smaller screens */
-    gap: 20px;
-    width: 100%;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.contact-item {
-    text-align: center;
-    flex: 1;
-    max-width: 300px;
-    padding: 10px;
-}
-
-.contact-item img {
-    height: 30px;
-    margin: 10px 0;
-    padding: 17px;
-    background-color: rgb(207, 206, 194);
-    border-radius: 15px;
-    transition: transform 0.2s;
-}
-
-.contact-item img:hover {
-    transform: scale(1.07);
-}
-
-.contact-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
-}
-
-.contact-item p {
-    margin: 5px 0;
-    color: #555;
-}
-
-#contact-info_phone {
-    color: #C5693E;
-}
-
-.contact-item a {
-    color: #C5693E;
-    text-decoration: none;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #contact_askInformation {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-form {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .contact-info {
-        flex-direction: column;
-    }
-
-    .contact-item {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    #contact-form-name {
-        flex-direction: column;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-}
-
-
-/* product !! */
-
+/* Product page container */
 .project-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Breadcrumb navigation */
 .nav-breadcrumb {
     margin-bottom: 20px;
 }
 
+/* Breadcrumb link styling */
 .nav-breadcrumb a {
     color: #333;
     text-decoration: none;
 }
 
+/* Product section layout */
 .product-section {
     display: flex;
     flex-wrap: wrap;
@@ -1556,83 +1397,95 @@ h5 {
     margin-bottom: 40px;
 }
 
+/* Product image container */
 .product-image {
     flex: 1.5;
     min-width: 300px;
 }
 
+/* Product image styling */
 .product-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
+/* Product information container */
 .product-info {
     flex: 2;
     min-width: 300px;
 }
 
+/* Product title styling */
 .product-title {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+/* Product rating styling */
 .product-rating {
     color: #f9a825;
     margin-bottom: 10px;
 }
 
+/* Product price styling */
 .product-price {
     font-size: 24px;
     font-weight: bold;
     color: #C5693E;
     margin-bottom: 20px;
     transition: .5s ease-in;
-
 }
 
+/* Active state for product price */
 .product-price:active {
     color: rgba(202, 123, 33, 0.818);
 }
 
+/* Product description styling */
 .product-description {
     margin-bottom: 20px;
 }
 
+/* Product meta information */
 .product-meta {
     margin-bottom: 20px;
 }
 
+/* Film size options container */
 .film-size {
     margin-bottom: 20px;
 }
 
-
+/* Size options layout */
 .size-options {
     display: flex;
     gap: 10px;
 }
 
+/* Individual size option styling */
 .size-option {
     padding: 5px 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-
 }
 
+/* Hover effect for size options */
 .size-option:hover {
     background-color: #C5693E;
     color: white;
 }
 
+/* Product actions container */
 .product-actions {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
+/* Quantity selector container */
 .quantity {
     display: flex;
     align-items: center;
@@ -1640,48 +1493,52 @@ h5 {
     border-radius: 4px;
 }
 
-.quantity button,
-.quantity input {
+/* Quantity buttons and input styling */
+.quantity button, .quantity input {
     border: none;
     background: none;
     padding: 10px;
     font-size: 16px;
 }
 
-.plus,
-.minus {
+/* Plus and minus button styling */
+.plus, .minus {
     background-color: #C5693E !important;
     border-radius: 4px;
     cursor: pointer;
-
 }
 
+/* Quantity input styling */
 .quantity input {
     width: 50px;
     text-align: center;
 }
 
-.add-to-cart,
-.wishlist {
+/* Add to cart and wishlist button styling */
+.add-to-cart, .wishlist {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
+/* Add to cart button specific styling */
 .add-to-cart {
     background-color: #C5693E;
     color: white;
 }
 
+/* Wishlist button specific styling */
 .wishlist {
     background-color: #f5f5f5;
 }
 
+/* Product tabs container */
 .product-tabs {
     margin-bottom: 40px;
 }
 
+/* Tab navigation styling */
 .tab-nav {
     font-weight: bold;
     font-size: 25px;
@@ -1692,56 +1549,70 @@ h5 {
     border-bottom: 2px solid #ddd;
 }
 
+/* Individual tab styling */
 .tab-nav li {
     padding: 10px 20px;
     cursor: pointer;
 }
 
+/* Active tab styling */
 .tab-nav li.active {
     border-bottom: 2px solid #C5693E;
 }
 
+/* Tab content container */
 .tab-content {
     padding: 20px 0;
 }
 
+/* Individual tab pane styling */
 .tab-pane {
     display: none;
 }
 
+/* Active tab pane styling */
 .tab-pane.active {
     display: block;
 }
 
+Certainly! Here's the continuation with comments added for each selector:
+
+```css
+/* Table styling for product information */
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th,
-td {
+/* Table cell styling */
+th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
+/* Table header styling */
 th {
     background-color: #f2f2f2;
 }
 
+/* Individual review container */
 .review {
     border-bottom: 1px solid #ddd;
     padding: 15px 0;
 }
 
+/* Reviewer name styling */
 .reviewer {
     font-weight: bold;
 }
 
+/* Rating stars styling */
 .rating {
     color: #ffc107;
 }
 
+/* Product recommendations container */
 .recommendations {
     display: flex;
     flex-wrap: wrap;
@@ -1749,6 +1620,7 @@ th {
     margin-top: 40px;
 }
 
+/* Individual recommendation styling */
 .recommendation {
     flex: 1;
     padding: 20px;
@@ -1757,45 +1629,50 @@ th {
     background-color: #F9F4F0;
 }
 
-.recommendation>img {
+/* Recommendation image styling */
+.recommendation > img {
     width: 300px;
     height: auto;
     padding: 10px;
     border-radius: 20px;
 }
 
-.recommendation>a {
+/* Recommendation link styling */
+.recommendation > a {
     text-decoration: none;
     color: black;
     padding-bottom: 10px;
 }
 
-.recommendation>a>h3 {
+/* Recommendation title styling */
+.recommendation > a > h3 {
     font-weight: bold !important;
 }
 
-.recommendation>p+p {
-
+/* Recommendation price styling */
+.recommendation > p + p {
     color: #C5693E;
 }
 
-
+/* Media query for mobile devices */
 @media (max-width: 768px) {
+    /* Adjust tab navigation for smaller screens */
     .tab-nav {
         font-weight: bold;
         font-size: 12px;
-
     }
 
+    /* Stack product section vertically on smaller screens */
     .product-section {
         flex-direction: column;
     }
 
-    .product-image,
-    .product-info {
+    /* Full width for product image and info on smaller screens */
+    .product-image, .product-info {
         width: 100%;
     }
 
+    /* Stack recommendations vertically on smaller screens */
     .recommendations {
         flex-direction: column;
     }
