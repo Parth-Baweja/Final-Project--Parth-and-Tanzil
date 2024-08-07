@@ -169,7 +169,7 @@ header .navBar {
 /* Background container */
 .bg-container {
     position: relative;
-    background-image: url("/img/minolta-vintage-camera-on-white-background.jpg");
+    background-image: url("../img/minolta-vintage-camera-on-white-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
